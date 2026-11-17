@@ -4,6 +4,7 @@ import { ArrowUpRight, Check, Copy, Loader2, Send } from 'lucide-react';
 import { ANKIT_PROFILE } from '../../data/ankitData.js';
 
 const INQUIRY_TYPES = ['Full-Time MERN Role', 'Operations / CCO Role', 'Freelance Build'];
+const FORM_SUBMIT_URL = 'https://formsubmit.co/ajax/ankitk13266@gmail.com';
 
 function buildMailtoHref(name, contact, topic, msg) {
   const subject = encodeURIComponent(`[Portfolio · ${topic}] Message from ${name || 'Visitor'}`);
@@ -59,75 +60,37 @@ export function ContactForm() {
     const fallbackHref = buildMailtoHref(trimmedName, trimmedContact, inquiryType, trimmedMsg);
 
     try {
-      const apiRes = await fetch('/api/contact', {
+      const fsRes = await fetch(FORM_SUBMIT_URL, {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+        headers: {
+          'Content-Type': 'application/json',
+          Accept: 'application/json',
+        },
         body: JSON.stringify({
-          name: trimmedName,
+          name: trimmedName || 'Portfolio Visitor',
           contact: trimmedContact,
-          inquiryType,
+          topic: inquiryType,
           message: trimmedMsg,
+          _subject: `[Portfolio · ${inquiryType}] New message from ${trimmedName || 'Visitor'}`,
+          _template: 'table',
         }),
       });
+      const fsData = await fsRes.json().catch(() => null);
 
-      const apiData = await apiRes.json().catch(() => null);
-
-      if (!apiRes.ok) {
+      if (!fsRes.ok || !(fsData?.success === 'true' || fsData?.success === true)) {
         setStatus({
           kind: 'error',
-          message: apiData?.error || 'Could not submit form. Please try again.',
+          message:
+            (typeof fsData?.message === 'string' && fsData.message.trim()) ||
+            'FormSubmit could not confirm delivery. Please try again or use your email app below.',
+          fallbackMailto: fallbackHref,
         });
         return;
-      }
-
-      if (apiData?.delivered) {
-        setStatus({
-          kind: 'sent',
-          message: `Message sent directly to ${ANKIT_PROFILE.email}. Ankit will reply soon.`,
-        });
-        setVisitorName('');
-        setVisitorContact('');
-        setVisitorMessage('');
-        return;
-      }
-
-      try {
-        const fsRes = await fetch(`https://formsubmit.co/ajax/${ANKIT_PROFILE.email}`, {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-            Accept: 'application/json',
-          },
-          body: JSON.stringify({
-            name: trimmedName || 'Portfolio Visitor',
-            contact: trimmedContact,
-            topic: inquiryType,
-            message: trimmedMsg,
-            _subject: `[Portfolio · ${inquiryType}] New message from ${trimmedName || 'Visitor'}`,
-            _template: 'table',
-          }),
-        });
-        const fsData = await fsRes.json().catch(() => null);
-
-        if (fsRes.ok && (fsData?.success === 'true' || fsData?.success === true)) {
-          setStatus({
-            kind: 'sent',
-            message: `Message forwarded to ${ANKIT_PROFILE.email}. Thank you for reaching out!`,
-          });
-          setVisitorName('');
-          setVisitorContact('');
-          setVisitorMessage('');
-          return;
-        }
-      } catch {
-        // Fallback below
       }
 
       setStatus({
-        kind: 'saved_fallback',
-        message:
-          'Your message has been saved. You can also send it immediately using your email app below.',
-        fallbackMailto: fallbackHref,
+        kind: 'sent',
+        message: `Message forwarded to ${ANKIT_PROFILE.email}. Thank you for reaching out!`,
       });
       setVisitorName('');
       setVisitorContact('');
@@ -135,7 +98,8 @@ export function ContactForm() {
     } catch {
       setStatus({
         kind: 'error',
-        message: 'Network error while sending message. Please try again or email directly.',
+        message: 'Network error while sending your message. You can try again or use your email app below.',
+        fallbackMailto: fallbackHref,
       });
     }
   };

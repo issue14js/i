@@ -1,0 +1,37 @@
+# Ankit Kumar — MERN Stack Developer & Customer Operations Specialist
+
+> Official portfolio of Ankit Kumar, based in Darbhanga, Bihar, India. Combines 3+ years of live healthcare pharmacy billing and Daikin/Hitachi customer care operations with self-taught MERN Stack engineering, Groq AI workflows, and GSAP 2D motion UI.
+
+## Key Links
+- [Home & Story]({{SITE_URL}}/): Overview, turning point narrative, capabilities, and FAQs
+- [Selected Works]({{SITE_URL}}/work): Case studies for Vanguard CRM, AI T&C Summarizer, Kinetic 2D GSAP Lab, and Operations
+- [2D Physics & Playground]({{SITE_URL}}/playground): Interactive 2D physics experiments and UI micro-studies
+- [About & Timeline]({{SITE_URL}}/about): Work experience, technical + operational stack, education, and certificates
+- [Contact & Hire]({{SITE_URL}}/contact): Direct inquiry form and verified contact details
+
+## Contact & Profiles
+- Email: ankitk13266@gmail.com
+- Phone: +91-7544873709
+- Location: Sahganj, Benta, Laheriasarai, Darbhanga, Bihar - 846003, India (Open to Remote & Relocation)
+- LinkedIn: https://www.linkedin.com/in/ankit-io
+- GitHub: https://github.com/issue14js
+- Instagram: https://www.instagram.com/issue.io/
+- Certificates Drive: https://drive.google.com/drive/folders/1IU9Revo3VLZeRyVfg-HmcxdrRjEi8ke2
+
+## Work Experience
+1. Customer Care Officer (CCO) — Galaxy Service (Authorized Partner: Daikin & Hitachi), Aug 2026 – Present, Darbhanga, Bihar
+2. Pharmacy Sales & Data Entry Executive — Ugana Medico (Under Darbhanga Heart Hospital), Jul 2023 – Jul 2026, Darbhanga, Bihar
+3. Full Stack Development Intern — InCodec Technology (1 Month MERN Stack Internship)
+
+## Featured Projects
+- Vanguard CRM: React.js + Context API + custom Tactile Ivory UI system with Login/Register auth and multi-level lead filtering.
+- AI Terms & Conditions Summarizer: Built at Sheryians Cohort Hackathon 2026 (Team Afdhruval) using Node.js, Express.js, and Groq API.
+- Kinetic 2D & GSAP Lab: MERN Stack, JavaScript ES6+, GSAP ScrollTrigger choreography, and AWS pipelines.
+
+## Education & Certifications
+- ITI COPA — Integrated Infotech Private ITI, Baheri (NCVT Approved, Pursuing)
+- 10th Standard — BBOSE (Score: 315)
+- Full Stack Web Development & DSA Excellence — Sheryians Coding School (June 2026)
+- Web Design & Development — NSDC Skill India Digital Hub (June 2026)
+- Data Analytics Job Simulation — Deloitte (Forage)
+- Product Management Job Simulation — Electronic Arts (Forage)

@@ -1,16 +1,27 @@
-# React + Vite
+# Ankit Kumar Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A frontend-only portfolio built with React and Vite.
 
-Currently, two official plugins are available:
+## Development
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+```sh
+npm install
+npm run dev
+```
 
-## React Compiler
+Create a production build with `npm run build`, then preview it with `npm run preview`.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Contact form
 
-## Expanding the ESLint configuration
+The contact form submits directly to FormSubmit from the browser. If submission fails, it offers a pre-filled email-app link. FormSubmit may require confirming the recipient email the first time it is used.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## SEO files
+
+`robots.txt`, `sitemap.xml`, `llms.txt`, and `llms-full.txt` are served as static files. Set `VITE_SITE_URL` to the deployed site URL when building to generate absolute links and sitemap entries, for example:
+
+```sh
+$env:VITE_SITE_URL = "https://example.com"
+npm run build
+```
+
+The build succeeds without this variable, but the sitemap will have no URL entries until a site URL is configured.

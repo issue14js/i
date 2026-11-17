@@ -1,0 +1,19 @@
+# Ankit Kumar — MERN Stack Developer & Customer Operations Specialist
+
+> Official portfolio of Ankit Kumar, based in Darbhanga, Bihar, India. Combines 3+ years of live healthcare pharmacy billing and Daikin/Hitachi customer care operations with self-taught MERN Stack engineering, Groq AI workflows, and GSAP 2D motion UI.
+
+## Key Links
+- [Home & Story]({{SITE_URL}}/): Overview, turning point narrative, capabilities, and FAQs
+- [Selected Works]({{SITE_URL}}/work): Case studies for Vanguard CRM, AI T&C Summarizer, Kinetic 2D GSAP Lab, and Operations
+- [2D Physics & Playground]({{SITE_URL}}/playground): Interactive 2D physics experiments and UI micro-studies
+- [About & Timeline]({{SITE_URL}}/about): Work experience, technical + operational stack, education, and certificates
+- [Contact & Hire]({{SITE_URL}}/contact): Direct inquiry form and verified contact details
+
+## Contact & Profiles
+- Email: ankitk13266@gmail.com
+- Phone: +91-7544873709
+- Location: Sahganj, Benta, Laheriasarai, Darbhanga, Bihar - 846003, India (Open to Remote & Relocation)
+- LinkedIn: https://www.linkedin.com/in/ankit-io
+- GitHub: https://github.com/issue14js
+- Instagram: https://www.instagram.com/issue.io/
+- Certificates Drive: https://drive.google.com/drive/folders/1IU9Revo3VLZeRyVfg-HmcxdrRjEi8ke2
