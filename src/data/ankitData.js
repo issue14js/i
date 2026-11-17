@@ -1,8 +1,8 @@
 export const GENERATED_IMAGES = {
-  heroPortrait: '/src/assets/images/ankit_hero_editorial_1794759943550.jpg',
+  heroPortrait: '/src/assets/images/hero charecter pose.png',
   deskCandid: '/src/assets/images/ankit_desk_candid_1794759945666.jpg',
   offClockStreet: '/src/assets/images/ankit_offclock_street_1794759944119.jpg',
-  vanguardMockup: '/src/assets/images/vanguard_crm_mockup_1794759945154.jpg',
+  vanguardMockup: '/src/assets/images/vanguard_crm_mockup_1794759945154.png',
 };
 
 export const ANKIT_PROFILE = {
@@ -27,16 +27,17 @@ export const ANKIT_PROFILE = {
     linkedin: 'https://www.linkedin.com/in/ankit-io',
     github: 'https://github.com/issue14js',
     instagram: 'https://www.instagram.com/issue.io/',
-    certificates: 'https://drive.google.com/drive/folders/1IU9Revo3VLZeRyVfg-HmcxdrRjEi8ke2',
+    certificates: 'https://drive.google.com/drive/folders/1lU9Revo3VLZeRyVfg-HmcxdrRjEi8ke2?usp=sharing',
+    resume: 'https://drive.google.com/file/d/1znXXZbbR9bbiHE_Bu_bS61sXHtxdWEMl/view?usp=sharing',
   },
   heroCopy: {
     headline: 'FROM HOSPITAL COUNTERS TO FULL-STACK CODE.',
     subhead:
       'Three years handling Darbhanga’s busiest pharmacy billing desks and Daikin/Hitachi service calls taught me how real people behave under pressure. Now I channel that discipline into fast MERN stack apps, Groq AI tools, and kinetic 2D interfaces.',
     metrics: [
-      { value: '3+ Years', label: 'Live Operations & Billing' },
+      { value: '3+ Years', label: 'Pharmacy Sales & Data Entry Executive ' },
       { value: '4 Builds', label: 'Full-Stack & AI Projects' },
-      { value: '2026', label: 'Sheryians DSA + Hackathon' },
+      { value: '2026', label: 'Sheryians MERN Stack + 2 Hackathon' },
       { value: 'Remote / Onsite', label: 'Ready to Relocate' },
     ],
   },
@@ -47,7 +48,7 @@ export const ANKIT_PROFILE = {
     body1:
       'Most developers learn user empathy from textbooks. I learned it over three years at Ugana Medico inside Darbhanga Heart Hospital — balancing counter medicine sales, daily inventory entries, and billing accuracy while assisting doctors and patients in real time.',
     body2:
-      'Today, as Customer Care Officer for Galaxy Service (Daikin & Hitachi authorized partner), I coordinate inbound service escalations and field technician schedules by day — and build React, Node.js, MongoDB, JavaScript, and GSAP motion products by night.',
+      'Today, as Customer Care Officer for A.S Galaxy Service (Daikin & Hitachi authorized partner), I coordinate inbound service escalations and field technician schedules by day — and build React, Node.js, MongoDB, JavaScript, and GSAP motion products by night.',
   },
 };
 

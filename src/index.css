@@ -8,8 +8,22 @@
   --accent: #d9381e;
 }
 
+/* Hide scrollbar but keep scrolling */
+html, body, #root {
+  width: 100%;
+  overflow-x: hidden;
+  scrollbar-width: none;
+}
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar,
+#root::-webkit-scrollbar {
+  display: none;
+}
+
 @layer base {
   html {
+    
     background-color: var(--paper);
     color: var(--ink);
     font-family: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, sans-serif;

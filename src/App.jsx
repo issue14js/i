@@ -99,7 +99,7 @@ export default function App() {
   }, [currentPage]);
 
   return (
-    <div className="min-h-screen w-full bg-[#f4f1ea] text-[#141413] selection:bg-[#d9381e] selection:text-[#f4f1ea]">
+    <div className="min-h-screen w-full bg-[#f4f1ea] text-[#141413] selection:bg-[#d9381e] overflow-hidden scrollbar-none selection:text-[#f4f1ea]">
       <SiteHeader currentPage={currentPage} onNavigate={navigate} />
 
       <div

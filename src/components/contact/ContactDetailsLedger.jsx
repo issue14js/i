@@ -108,6 +108,14 @@ export function ContactDetailsLedger() {
         >
           Certificates
         </a>
+        <a
+          href={ANKIT_PROFILE.socials.resume}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="editorial-underline"
+        >
+          Resume
+        </a>
       </div>
     </div>
   );

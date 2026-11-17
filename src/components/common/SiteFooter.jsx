@@ -64,7 +64,7 @@ export function SiteFooter({ onNavigate }) {
 
   return (
     <footer ref={footerRef} className="w-full bg-[#141413] text-[#f4f1ea]">
-      <div className="mx-auto max-w-[1440px] px-[var(--page-padding)] pt-20 pb-24">
+      <div className="mx-auto max-w-[1440px] px-[var(--page-padding)] pt-20 pb-10">
         {/* Top Story Callout */}
         <div className="grid gap-10 border-b border-[#f4f1ea]/15 pb-16 lg:grid-cols-12 lg:items-end">
           <div className="lg:col-span-8">
@@ -187,18 +187,29 @@ export function SiteFooter({ onNavigate }) {
                   <ArrowUpRight className="h-3.5 w-3.5" />
                 </a>
               </li>
+              <li>
+                <a
+                  href={ANKIT_PROFILE.socials.resume}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1.5 text-[#f4f1ea]/80 hover:text-[#f4f1ea]"
+                >
+                  <span>Resume</span>
+                  <ArrowUpRight className="h-3.5 w-3.5" />
+                </a>
+              </li>
             </ul>
           </div>
         </div>
 
         {/* Bottom Copyright */}
-        <div
+        {/* <div
           data-footer-msg
           className="flex flex-col items-start justify-between gap-3 border-t border-[#f4f1ea]/12 pt-6 text-xs text-[#f4f1ea]/50 sm:flex-row sm:items-center"
         >
           <span>© {new Date().getFullYear()} Ankit Kumar · {ANKIT_PROFILE.originQuote}</span>
           <span>Hindi · English · Darbhanga, Bihar</span>
-        </div>
+        </div> */}
       </div>
     </footer>
   );

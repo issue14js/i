@@ -281,22 +281,22 @@ export function HeroSection({ onNavigate }) {
           <div className="lg:col-span-5">
             <div
               data-hero-portrait-clip
-              className="relative h-[420px] sm:h-[520px] lg:h-full lg:min-h-[540px] w-full overflow-hidden border border-[#141413]/15 bg-[#e8e3d8]"
+              className="relative h-[420px]  flex justify-center lg:left-15 items-center sm:h-[520px] lg:h-[540px] w-full overflow-hidden"
             >
               <img
                 data-hero-portrait-img
                 src={ANKIT_PROFILE.photos.hero}
                 alt="Ankit Kumar studio portrait"
                 referrerPolicy="no-referrer"
-                className="h-full w-full object-cover object-top will-change-transform"
+                className=" h-[550px] w-[300px] object-cover  mx-auto mb-10 object-center  will-change-transform"
               />
               <div
                 data-hero-float-badge
-                className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-[#141413]/88 via-[#141413]/40 to-transparent p-5 text-[#f4f1ea]"
+              className="absolute bottom-0 left-1/2 text-2xl -translate-x-1/2 w-[300px] bg-transparent p-5 text-[#d9381e]"
               >
                 <div className="flex items-center justify-between text-xs">
-                  <span className="font-medium">Ankit Kumar · MERN &amp; Operations</span>
-                  <span className="font-mono-tabular opacity-85">Darbhanga, IN</span>
+                  <span className="font-bold ">Ankit Kumar · MERN &amp; Operations</span>
+                  <span className="  font-bold font-mono-tabular opacity-85">Darbhanga, IN</span>
                 </div>
               </div>
             </div>
